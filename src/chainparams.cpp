@@ -160,6 +160,7 @@ public:
 		genesis.nBits = 520159231;
 		genesis.nNonce = 209474;
 
+        printf("Block hash test: %s\n", genesis.GetHash().ToString().c_str());
 		//assert(hashGenesisBlock == uint256("0x8ea58063fe9e14c45dbf5efab5b3812291074f6b1af5305b7b45647bdbfdea90"));
 
 		vFixedSeeds.clear();
