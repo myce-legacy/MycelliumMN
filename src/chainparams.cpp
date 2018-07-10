@@ -92,6 +92,10 @@ public:
 
 		hashGenesisBlock = genesis.GetHash();
 
+        printf("Transaction hash: %s\n", txNew.GetHash().ToString().c_str());
+        printf("Merkle hash: %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        printf("Block hash: %s\n", hashGenesisBlock.ToString().c_str());
+
 		assert(genesis.hashMerkleRoot == uint256("0x8ea58063fe9e14c45dbf5efab5b3812291074f6b1af5305b7b45647bdbfdea90"));
 		assert(hashGenesisBlock == uint256("0x0000c74cc66c72cb1a327c5c1d4893ae5276aa50be49fb23cec21df1a2f20d87"));
 
